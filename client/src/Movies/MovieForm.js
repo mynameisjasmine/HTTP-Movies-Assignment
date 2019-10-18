@@ -4,7 +4,7 @@ import axios from 'axios';
 const MovieForm = props => {
 const [input, setInput] = useState({title: '', director: '', metascore: '', stars: []})
 
- const movieId = props.match.params.id;
+
  
 const getMovie = id => {
     axios
@@ -15,8 +15,8 @@ const getMovie = id => {
 
   
  useEffect(() => {
-    getMovie(movieId)
-  },[movieId])
+    getMovie(props.match.params.id)
+  },[props.match.params.id])
  
 const handleChange = event => {
 
@@ -43,7 +43,7 @@ const submitForm = event => {
     event.preventDefault()
     
  axios
- .put(`http://localhost:5000//api/movies/${movieId}`, input) 
+ .put(`http://localhost:5000/api/movies/${props.match.params.id}`, input) 
  .then(res => {
  console.log(res.data);
  props.history.push('/');

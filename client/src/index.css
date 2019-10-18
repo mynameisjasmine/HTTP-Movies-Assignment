@@ -58,12 +58,22 @@ body {
   top: 25px;
   right: 25px;
   border: 1px solid grey;
-  padding: 5px 10px;
+  padding: 5px 12px;
   background-color: lightseagreen;
 }
 .save-button:hover {
   background-color: green;
   color: white;
+}
+
+.update-button:hover {
+  background-color: green;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: white;
+  color: red;
 }
 
 .update-button {
@@ -76,6 +86,19 @@ body {
   text-decoration: none;
   color: black;
 }
+
+.delete-button {
+  position: absolute;
+  top: 145px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 8px;
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
 
 .home-button {
   padding: 5px 10px;
