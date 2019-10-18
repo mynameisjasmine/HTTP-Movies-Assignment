@@ -66,9 +66,25 @@ body {
   color: white;
 }
 
+.update-button {
+  position: absolute;
+  top: 85px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 5px;
+  background-color: lightseagreen;
+  text-decoration: none;
+  color: black;
+}
+
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
+}
+
+form {
+margin: 0 auto;
+width: 50%;
 }
 
 .movie-warning {
